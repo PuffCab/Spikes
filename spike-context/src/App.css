@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.container-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name-Style {
+  color: red;
+}
+
+.myOwnStyle {
+  color: blue;
+}
