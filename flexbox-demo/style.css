@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  background-color: lightblue;
+  height: 250px;
+  width: 250px;
+  margin: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item > p {
+  font-size: 50px;
+}
+
+.container :nth-child(9) > p {
+  color: red;
+  align-self: flex-end;
+}
+
+div :nth-child(4) {
+  background-color: yellow;
+}
+
+@keyframes animationDemo {
+  0% {
+    background-color: red;
+  }
+  50% {
+    font-size: 80px;
+  }
+  75% {
+    color: chartreuse;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+
+.item > p {
+  /* animation-name: animationDemo;
+  animation-duration: 1s;
+  animation-iteration-count: infinite; */
+  animation: animationDemo 1s infinite;
+}
