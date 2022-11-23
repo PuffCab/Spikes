@@ -1,0 +1,13 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.grid :nth-child(even) {
+  background-color: coral;
+}
+
+.grid :nth-child(1) {
+  grid-column: 1/3;
+}
