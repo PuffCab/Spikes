@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <h1 id="title" class="my-title">Welcome to the DOMjungle, Elephants</h1>
+    <h2 class="blue-h2">I am blue</h2>
+
+    <button onclick="changeColor()">Change color</button>
+    <button id="toggle" onmouseenter="toggleButton()">toggle button</button>
+    <nav>
+      <ul>
+        <li onclick="toggleButton()" class="li">Home</li>
+        <li class="li">About</li>
+        <li class="li">contact</li>
+      </ul>
+    </nav>
+    <div>
+      <input value="yes" type="radio" name="radio" id="yes" checked />
+      <label for="yes">yes</label>
+      <input value="no" type="radio" name="radio" id="no" />
+      <label for="no">no</label>
+    </div>
+
+    <span
+      >there is a
+      <p>p tag</p>
+      inside this span</span
+    >
+    <div class="container">
+      <section>some text</section>
+      <section></section>
+      <section></section>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
