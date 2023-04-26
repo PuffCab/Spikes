@@ -1,0 +1,117 @@
+/* * {
+    outline: 1px solid red;
+} */
+:focus {
+    outline: 3px dotted red;
+}
+
+.skip-link {
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    /* inset sums up all margin properties */
+    /* inset: 0 0 auto 0; */
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    transform: translate(0px, -100px);
+    transition: transform 1000ms ease-in-out;
+}
+
+.skip-link:focus {
+    transform: translate(0px, 0px);
+}
+.grid {
+    display: grid;
+    grid-template-areas: 
+    "header title title "
+    "nav main main"
+    "nav main main"
+    "footer footer footer";
+    gap: 10px
+}
+h1 {
+    color: blue;
+}
+
+header {
+    grid-area: header;
+    /* display: flex; */
+    /* display: grid;
+    grid-template-columns: 0.3fr 1fr; */
+    
+}
+.title {
+    grid-area: title;
+}
+header, .title {
+    background-color: limegreen;
+}
+.links {
+    display: flex;
+    justify-content: space-evenly;
+}
+nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: magenta;
+}
+
+main {
+    display: grid;
+    grid-area: main;
+    background-color: turquoise;
+}
+.img-div {
+    place-self: center;
+}
+footer {
+    grid-area: footer;
+    place-self: center;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+        .grid {
+            display: grid;
+            grid-template-areas:
+                "header"
+                "title"
+                "nav"
+                "main"
+                "footer";
+            gap: 5px
+        }
+                nav {
+                    grid-area: nav;
+                   display: grid;
+                   grid-template-columns: repeat(3, 1fr);
+                    background-color: magenta;
+                }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 780px) {
+body {
+        background-color: blue;
+    }
+
+ }
+
+ /* @media only screen and (800px <= width <= 870px) {
+    body {
+            background-color: yellow;
+        }
+ } */
+
+ @media (800px <= width <=870px) or (orientation: landscape) {
+    body {
+            background-color: yellow;
+        }
+ }
