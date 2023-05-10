@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DOM Manip</title>
+  </head>
+  <body>
+    <h1 id="h1" class="header" onmouseover="changeColor()">DOM Manipulation</h1>
+
+    <section id="p-section">
+      <span>
+        <p id="p-id" class="p-tag">first P tag</p>
+        <p class="p-tag">second P tag</p>
+        <p id="p-id">third P tag</p>
+        <span id="span"
+          >this span contains also
+          <p>contains a p tag</p></span
+        >
+      </span>
+    </section>
+    <section>
+      <div>
+        <img
+          src="hateJS.webp"
+          alt="starwars meme about Javascript"
+          title="JS anger"
+        />
+      </div>
+      <button onclick="changeImg()">change picture</button>
+      <span
+        ><button onclick="rectangle()">rectangle</button>
+        <button onclick="round()">round</button></span
+      >
+    </section>
+    <section>
+      <form action="show.html"></form>
+      <input type="text" id="input-text" name="input" onchange="addNewLine()" />
+      <span>Add a new line</span>
+      <span id="new-line"> </span>
+    </section>
+    <section>
+      <span>
+        <input type="radio" name="radio" id="lol" value="😆" />
+        <label for="lol">😆</label>
+        <input type="radio" name="radio" id="cry" value="😭" />
+        <label for="cry">😭</label>
+        <input type="radio" name="radio" id="boom" value="🤯" />
+        <label for="boom">🤯</label>
+      </span>
+      <button onclick="selectedMood()">selected mood</button>
+    </section>
+
+    <!-- <nav>
+      <ul>
+        <li class="header">Home</li>
+        <li class="header">about</li>
+      </ul>
+    </nav> -->
+    <script src="main.js"></script>
+  </body>
+</html>
