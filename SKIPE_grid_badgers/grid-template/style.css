@@ -1,0 +1,16 @@
+* {
+    outline: 1px solid red;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.grid :nth-child(even) {
+    background-color: grey;
+}
+
+.grid :nth-child(7) {
+    grid-column:1/3 ;
+}
