@@ -1,0 +1,35 @@
+
+* {
+    outline: 1px solid red;
+}
+
+img {
+    width: 200px;
+}
+
+h1 {
+    color: red;
+}
+
+.li-element {
+    background-color: grey;
+}
+
+#third-p {
+    font-size: x-large;
+}
+
+div p {
+    color: blue
+}
+
+div > p {
+    font-size: 40px;
+}
+
+#second-p {
+    color: yellow;
+}
+#second-p {
+    color: green;
+}
