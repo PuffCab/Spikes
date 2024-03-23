@@ -1,0 +1,64 @@
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.item {
+    background-color: blue;
+    width: 250px;
+    height: 250px;
+    /* margin: 10px; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 
+div > p {
+
+    color: white;
+    font-size: 60px;
+} */
+.item> p {
+
+    color: white;
+    font-size: 60px;
+    /* border: 2px solid red; */
+    margin: 0
+}
+
+.container :nth-child(1) > p {
+    color: red;
+    /* background-color: yellow; */
+    align-self: flex-end;
+    /* animation-name: my-animation;
+    animation-duration: 2s; */
+    animation: my-animation 2s infinite;
+    position: relative;
+}
+
+
+@keyframes my-animation {
+    10% {
+        background-color: red;
+    
+    }
+
+    50% {
+        background-color: yellow;
+        font-size: 80px;
+        left: 60px;
+    }
+
+    100% {
+        background-color: green;
+        font-size: 100px;
+        left: 100px;
+    }
+}
