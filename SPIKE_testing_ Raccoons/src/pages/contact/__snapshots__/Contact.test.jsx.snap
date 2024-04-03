@@ -1,0 +1,36 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Contact component is the same 1`] = `
+<div>
+  <h1>
+    Contact
+  </h1>
+  <span
+    data-testid="span-text"
+    style="visibility: hidden;"
+  >
+    Hi , message sent to 
+  </span>
+  <form
+    action=""
+  >
+    <input
+      id="name"
+      name="name"
+      placeholder="Name"
+      type="text"
+      value=""
+    />
+    <input
+      id="email"
+      name="email"
+      placeholder="Email"
+      type="email"
+      value=""
+    />
+  </form>
+  <button>
+    Contact Me
+  </button>
+</div>
+`;
