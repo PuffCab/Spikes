@@ -1,0 +1,43 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.grid :nth-child(1) {
+  grid-column: 1/3;
+}
+
+.grid :nth-child(3) {
+  grid-row: 3/4;
+}
+
+.article {
+  outline: 1px solid black;
+}
+
+.content {
+  padding: 10px;
+}
+
+.tech .title {
+  background-color: blue;
+}
+
+.coding .title {
+  background-color: yellow;
+}
+
+.science .title {
+  background-color: green;
+}
+
+.title {
+  padding: 3px;
+}
+
+.title h3 {
+  font-size: 1em;
+  /* color: white; */
+  text-transform: uppercase;
+}

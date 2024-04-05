@@ -1,0 +1,113 @@
+.grid {
+  display: grid;
+
+  grid-template-areas:
+    "myHeader title title"
+    "nav main main"
+    "nav main main"
+    "footer footer footer";
+}
+.title {
+  grid-area: title;
+}
+header {
+  grid-area: myHeader;
+  /* display: grid;
+  grid-template-columns: 0.3fr 1fr; */
+  display: flex;
+  background-color: lightgreen;
+}
+
+nav {
+  grid-area: nav;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: grey;
+}
+
+main {
+  grid-area: main;
+  background-color: coral;
+}
+
+.img-div {
+  display: grid;
+}
+.mainImg {
+  justify-self: center;
+}
+
+footer {
+  grid-area: footer;
+  /* justify-self: center; */
+  place-self: center;
+  background-color: lightblue;
+}
+
+footer span {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .grid {
+    display: grid;
+
+    grid-template-areas:
+      "myHeader"
+      "footer"
+      "title"
+      "nav"
+      "main";
+  }
+  nav {
+    /* display: flex;
+    flex-direction: row; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 850px) {
+  body {
+    background-color: orange;
+  }
+}
+
+/* @media (width >= 950px) {
+  body {
+    background-color: purple;
+  }
+} */
+@media (1200px <= width <= 1300px) or (orientation: landscape) {
+  body {
+    background-color: plum;
+  }
+}
+
+:focus {
+  outline: 3px solid red;
+}
+
+.skip-link {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+
+  transform: translate(0px, -100%);
+  transition: transform 200ms ease-in-out;
+}
+
+.skip-link:focus {
+  transform: translate(0px, 0px);
+}

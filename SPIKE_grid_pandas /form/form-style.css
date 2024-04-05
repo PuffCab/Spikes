@@ -1,0 +1,58 @@
+body {
+  font-family: "Alegreya Sans SC", sans-serif;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  border: 1px solid black;
+  width: 60%;
+  min-height: 60vh;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+h1 {
+  transition: 1s;
+}
+
+h1:hover {
+  color: aquamarine;
+  transition: 1s;
+}
+
+hr {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+/* Credentials section  */
+.input-label-pair {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.3em;
+
+  font-family: "Workbench", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "BLED" 0, "SCAN" 0;
+}
+
+.checkboxes-container {
+  display: flex;
+  justify-content: center;
+}
+
+.checkbox-label-pair {
+  display: flex;
+  justify-content: center;
+}
