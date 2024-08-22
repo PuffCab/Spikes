@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  background-color: blue;
+  height: 250px;
+  width: 250px;
+  /* & p {
+    color: white;
+  } */
+  margin: 10px;
+
+  display: flex;
+  justify-content: center;
+  /* to move the numbers to the left of the square container , apply below property value */
+  /* justify-content: flex-start;  */
+  align-items: center;
+}
+
+.item > p {
+  color: white;
+  font-size: 60px;
+}
+
+.container :nth-child(5) > p {
+  align-self: flex-end;
+  color: black;
+  /* animation-name: myAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; */
+  /* ! I forgot to mention that there is a property that combines all the properties of an animation. it is simple named "animation", and we can add all the values to the properties in certain order. Check w3 docs https://www.w3schools.com/css/css3_animations.asp */
+  animation: mayAnimation 2s infinite;
+}
+.container :nth-child(5) {
+  background-color: yellow;
+}
+
+@keyframes myAnimation {
+  0% {
+    background-color: red;
+    font-size: 20px;
+    transform: rotate(0);
+  }
+  50% {
+    background-color: green;
+    font-size: 50px;
+    transform: rotate(90deg);
+  }
+  100% {
+    background-color: yellow;
+    font-size: 80px;
+    transform: rotate(180deg);
+  }
+}
