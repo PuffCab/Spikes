@@ -1,0 +1,9 @@
+.navbar li {
+  list-style-type: none;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
