@@ -1,0 +1,39 @@
+body {
+  margin: 10px;
+  background-color: lightslategray;
+  font-size: 1em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 100px auto 200px;
+  /* grid-template-rows: 0.5fr 1fr 0.5fr; */
+  /* grid-template-rows: 1fr 1fr 1fr; */
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.grid :nth-child(6) {
+  background-color: lightcyan;
+  grid-row: 2/3;
+}
+
+.content {
+  padding: 10px;
+}
+
+.coding .title {
+  background-color: blue;
+}
+
+.science .title {
+  background-color: yellow;
+}
+
+.tech .title {
+  background-color: orangered;
+}
+
+.title h3 {
+  color: bisque;
+  text-transform: uppercase;
+}
