@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <h1 id="h1" class="header">DOM Manipulation</h1>
+    <h2 class="header">Exercise about DOM manipulation</h2>
+    <h2 class="header" id="blue-h2">
+      Getting to know some of the DOM selectors
+    </h2>
+    <button onclick="changeColor()">change color</button>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+      </ul>
+    </nav>
+    <img src="codingLaugh.png" alt="picture of a meme" />
+
+    <section>
+      <p id="p1">With some text</p>
+      <p id="p2">with some additional text</p>
+    </section>
+
+    <span id="span-input">
+      <input type="text" id="p-input" />
+      <button onmouseenter="addNewLine()">Add new line</button>
+    </span>
+
+    <div class="radio-container">
+      <input type="radio" name="radio" id="red" value="red" />
+      <label for="red">Red</label>
+      <input type="radio" name="radio" id="blue" value="blue" />
+      <label for="blue">Blue</label>
+      <input type="radio" name="radio" id="green" value="green" />
+      <label for="green">Green</label>
+      <input type="radio" name="radio" id="plum" value="plum" />
+      <label for="plum">Plum</label>
+      <button onclick="findColor()">guess color</button>
+      <h3 id="fav-color">My Fav Color for today is :</h3>
+    </div>
+    <div class="img-container"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
