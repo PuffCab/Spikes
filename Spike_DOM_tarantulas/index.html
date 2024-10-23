@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <h1 class="h1-class" id="h1-id">DOM Manipulation 🥈🕷️</h1>
+
+    <h2 class="blue-h2" id="h2-blue">
+      DOM Manipulation will allow us to modify our HTML page
+    </h2>
+    <button onclick="changeColor()">Change color</button>
+    <h2 class="h2-class" id="h2-id">And add cool animations</h2>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+      </ul>
+    </nav>
+
+    <img src="codingLaugh.png" alt="" />
+    <span id="span"
+      >this span contains
+      <p>a p tag with some text</p></span
+    >
+    <section></section>
+    <div class="container">
+      <button onclick="removeBold()">Remove Bold</button>
+    </div>
+
+    <span id="span-input">
+      <input type="text" id="p-input" />
+      <button onclick="addNewLine()">Add new test line</button>
+    </span>
+    <script src="main.js"></script>
+
+    <div class="radio-container">
+      <input type="radio" name="radio" id="lol" value="😂" />
+      <label for="lol">😂</label>
+      <input type="radio" name="radio" id="sad" value="☹️" />
+      <label for="sad">☹️</label>
+      <input type="radio" name="radio" id="party" value="🥳" />
+      <label for="party">🥳</label>
+      <button onclick="findMood()">Find my Mood</button>
+    </div>
+    <h3 id="h3-mood">My mood is:</h3>
+  </body>
+</html>

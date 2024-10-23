@@ -1,0 +1,89 @@
+body {
+  height: 100vh;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "header title title "
+    "nav main main"
+    "nav main main"
+    "myFooter myFooter myFooter";
+
+  gap: 10px;
+  height: 100vh;
+}
+
+/* .logo {
+  grid-area: logo;
+} */
+header {
+  grid-area: header;
+  display: flex;
+
+  /* display: grid;
+  grid-template-columns: 0.2fr 1fr; */
+}
+
+.title {
+  grid-area: title;
+}
+
+nav {
+  grid-area: nav;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: lightblue;
+}
+.img-div {
+  justify-self: center;
+}
+main {
+  grid-area: main;
+  display: grid;
+  background-color: plum;
+}
+
+footer {
+  grid-area: myFooter;
+  place-self: center;
+  background-color: chocolate;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: lightgreen;
+  }
+  .grid {
+    display: grid;
+    grid-template-areas:
+      "nav"
+      "header"
+      "myFooter"
+      "title"
+      "main";
+
+    gap: 10px;
+  }
+
+  nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 850px) {
+  body {
+    background-color: red;
+  }
+}
+
+@media (890px <= width < 1000px) or (orientation: landscape) {
+  body {
+    background-color: khaki;
+  }
+}
