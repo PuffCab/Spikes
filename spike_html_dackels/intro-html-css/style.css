@@ -1,0 +1,48 @@
+/* Types of CSS selectors */
+/* Tag Name */
+* {
+    outline: 1px solid red;
+}
+h1 {
+    color: blue;
+}
+
+h1 {
+    color: coral;
+}
+#li-id {
+    background-color: red;
+}
+/* Class name */
+.li-item {
+    font-size: larger;
+    background-color: green;
+}
+
+/* id name */
+#li-comment {
+    /* background-color: blanchedalmond; */
+}
+
+section  .span {
+    color: brown;
+}
+
+header>p:hover {
+    color:yellow
+}
+ul :nth-child(3) {
+    /* background-color: coral; */
+}
+
+li {
+    background-color: red;
+}
+
+h1 {
+    color: greenyellow;
+}
+
+img {
+    width: "500px";
+}
